@@ -25,4 +25,10 @@
         myAdapter = new MyAdapter();
         recyclerView.setAdapter(myAdapter);
 
+**注意：**
+
+在数据量较少时（不满一屏），可根据当前item数量进行判断，来禁止上拉加载，
+如：if (itemcounts<20) recyclerView.setCanPullUp(false);
+
+
 CSDN博客：http://blog.csdn.net/baiyuliang2013
