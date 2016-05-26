@@ -18,9 +18,9 @@
         recyclerView = (PullRecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setOnHeaderRefreshListener(this);//设置下拉监听
         recyclerView.setOnFooterRefreshListener(this);//设置下拉监听
-//        recyclerView.setCanScrollAtRereshing(true);//设置正在刷新时是否可以滑动，默认不可滑动
-//        recyclerView.setCanPullDown(false);//设置是否可下拉
-//        recyclerView.setCanPullUp(false);//设置是否可上拉
+        recyclerView.setCanScrollAtRereshing(true);//设置正在刷新时是否可以滑动，默认不可滑动
+        recyclerView.setCanPullDown(false);//设置是否可下拉
+        recyclerView.setCanPullUp(false);//设置是否可上拉
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         myAdapter = new MyAdapter();
         recyclerView.setAdapter(myAdapter);
