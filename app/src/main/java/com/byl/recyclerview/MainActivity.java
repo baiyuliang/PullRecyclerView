@@ -28,12 +28,10 @@ public class MainActivity extends AppCompatActivity implements PullBaseView.OnHe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(dm);
         initData();
         recyclerView = (PullRecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setOnHeaderRefreshListener(this);//设置下拉监听
-        recyclerView.setOnFooterRefreshListener(this);//设置下拉监听
+        recyclerView.setOnFooterRefreshListener(this);//设置上拉监听
 //        recyclerView.setCanScrollAtRereshing(true);//设置正在刷新时是否可以滑动，默认不可滑动
 //        recyclerView.setCanPullDown(false);//设置是否可下拉
 //        recyclerView.setCanPullUp(false);//设置是否可上拉
