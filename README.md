@@ -1,6 +1,8 @@
 # PullRecyclerView
 支持下拉刷新上拉加载的RecyclerView（带头部动画）
 
+CSDN博客地址：http://blog.csdn.net/baiyuliang2013/article/details/51516727
+
 ![这里写图片描述](http://img.blog.csdn.net/20160526095448143)
 
 **使用方法：**
